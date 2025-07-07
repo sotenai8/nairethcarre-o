@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Visible - Belluccia 3</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="#">MiWeb</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Equipo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+<section class="section-spacing container d-flex align-items-center justify-content-between" style="min-height: 100vh; padding-top: 100px;">
+  <div class="row align-items-center">
+     <!-- Imagen destacada -->
+    <div class="col-lg-6 text-center">
+      <img src="img/hero.png" class="img-fluid img-rounded" alt="Imagen Hero">
+    </div>
+    <!-- Texto principal -->
+    <div class="col-lg-6">
+      <h1 class="h1-custom">Pequeños rituales que despiertan grandes sentidos</h1>
+      <p class="p-custom">Vinos, secretos y un 20% off para iniciar tu ritual sin esfuerzo. El viaje comiendo con un brindis aún más dulce.</p>
+      <div class="d-flex gap-3 mt-4">
+        <a href="#" class="btn btn-dark">Suscribete al placer</a>
+      
+      </div>
+    </div>
+   
+  </div>
+</section>
+<!-- /HERO -->
+<!-- SERVICES: Servicios o funcionalidades -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Tres pasos, un ritual</h2>
+  <p class="mb-5">Elige tu suscripción, recibe cada mes una caja con vinos, experiencias y secretos, y vives tu ritual sensorial sin moverte de casa.</p>
+  <div class="row">
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/Descubre.png" class="mb-3" alt="Servicio">
+        <h5>Descubre</h5>
+        <p class="p-custom">Elige tu plan y deja que los vinos te encuentren a ti. La sorpresa empieza en cada elección.</p>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/Disfruta.png" class="mb-3" alt="Servicio">
+        <h5>Recibe tu caja</h5>
+        <p class="p-custom">Tu ritual mensual llega a tu puerta. Vinos, experiencias y secretos para descubrir sin esfuerzo.</p>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4">
+        <img src="img/Recibe.png" class="mb-3" alt="Servicio">
+        <h5>Disfruta sin apuro</h5>
+        <p class="p-custom">Descorcha, prueba, comparte. Cada botella guarda un instante, y cada instante, una historia.</p>
+      </div>
+    </div>
+    <!-- ... repetir estructura para más servicios ... -->
+  </div>
+</section>
+
+<!-- SECCIÓN D: Dos columnas iguales con texto e imagen -->
+<section class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Imagen a la izquierda -->
+    <div class="col-md-6 text-center mb-4 mb-md-0">
+      <img src="img/nosotros.png" class="img-fluid img-rounded" alt="Imagen">
+    </div>
+    <!-- Texto a la derecha -->
+    <div class="col-md-6 text-center text-md-start">
+      <h3 class="display-6" class="h3-custom">¿Por qué nosotros?</h3>
+      <p class="lead-custom">Porque no vendemos solo vino: curamos experiencias. En YaVino cada caja es un ritual sensorial diseñado para sorprenderte, emocionarte y conectar con lo que realmente te gusta. Somos ese puente entre lo cotidiano y lo extraordinario, entre el buen gusto y la magia de brindar diferente.</p>
+      <a href="#" class="btn btn-primary">Suscribete al placer</a>
+    </div>
+  </div>
+</section>
+
+<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Tu Ritual Mensual</h2>
+  <p class="p-custom">Cada mes, una nueva caja llega a tu puerta para iniciar el viaje. No es solo vino: es una atmósfera, una pausa, una invitación a reconectar con tu mundo interior.
+</p>
+  
+  <div class="row mt-5">
+    
+    <!-- Card: Plan Básico -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100">
+        <!-- Título y precio -->
+        <h2 class="text-uppercase">Alba</h2>
+        <p class="display-6 text-primary">75.000 $ARS <small></small></p>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="img/Alba.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+
+        <!-- Descripción -->
+        <p class="p-custom">Perfecto para empezar.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>2 botellas seleccionadas</li>
+          <li>Ficha de cata impresa</li>
+          <li>Video Explicativo</li>
+          <li>Carta de maridajes</li>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Pro (Recomendado) -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100 border border-primary">
+        <!-- Título y precio -->
+        <h2 class="text-uppercase">Aurora</h2>
+        <p class="display-6 text-primary">105.000 $ARS <small></small></p>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="img/Aurora.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
+
+        <!-- Descripción -->
+        <p class="p-custom">Ideal para quienes buscan más.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>3 botellas seleccionadas</li>
+          <li>Ficha de cata impresa</li>
+          <li>Carta de cócteles</li>
+          <li>Carta de maridaje</li>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Full -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100">
+        <!-- Título y precio -->
+        <h2 class="text-uppercase">Ocaso</h2>
+        <p class="display-6 text-primary">155.000 $ARS <small></small></p>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="img/Ocaso.png" class="img-fluid img-rounded my-3" alt="Plan Full">
+
+        <!-- Descripción -->
+        <p class="p-custom">La experiencia completa.<br><strong>Incluye:</strong></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>3 botellas seleccionadas</li>
+          <li>Ficha de cata impresa</li>
+          <li>Carta de cócteles</li>
+          <li>Pase Acumulable</li>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /PLANES DE SUSCRIPCIÓN -->
+
+<!-- SECCIÓN F: Beneficios sobre fondo de color con íconos de Bootstrap -->
+<section class="section-spacing text-center py-5">
+  <div class="container">
+    <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">WineSwap</h2>
+      <p class="p-custom">Cada mes, una nueva caja llega a tu puerta para iniciar el viaje. No es solo vino: es una atmósfera, una pausa, una invitación a reconectar con tu mundo interior.
+</p>
+    <div class="row">
+      
+      <!-- Ítem 1 -->
+      <div class="col-md-4 mb-4">
+      <img src="img/plan.png" class="img-fluid img-rounded" alt="Imagen">
+        <h5>Elige tu plan</h5>
+        <p class="p-custom">Alba, Aurora u Ocaso. Tú decides cuánto explorar cada mes.</p>
+      </div>
+      <!-- Ítem 2 -->
+      <div class="col-md-4 mb-4">
+        <img src="img/puerta.png" class="img-fluid img-rounded" alt="Imagen">
+        <h5>El instante llega a tu puerta</h5>
+        <p class="p-custom">Recibe tu selección de vinos, junto con cartas de cata, maridajes y secretos para explorar.</p>
+      </div>
+      <!-- Ítem 3 -->
+      <div class="col-md-4 mb-4">
+        <img src="img/hable.png" class="img-fluid img-rounded" alt="Imagen">
+        <h5>Deja que el vino hable</h5>
+        <p class="p-custom">Prueba, siente, anota. Algunos vinos te eligen, otros quizás no... y está bien.</p>
+      </div>
+       <!-- Ítem 4 -->
+      <div class="col-md-4 mb-4">
+        <img src="img/plan.png" class="img-fluid img-rounded" alt="Imagen">
+        <h5>Dales una nuevaa historia</h5>
+        <p class="p-custom">¿No conectaste con una botella? Canjeala desde tu espacio WineSwap. Otra persona puede vivir lo que tu no.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS: Opiniones de clientes -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Testimonios</h2>
+  <p class="p-custom">Comentarios reales de usuarios para generar confianza.</p>
+  <div class="row">
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+      <blockquote class="blockquote p-4">
+        No tengo tiempo de buscar vinos únicos, pero quiero sorprenderme. Me encanta cuando la caja llega, porque no sé qué me espera. Es como un ritual mensual solo para mí.
+
+Plan: Ocaso
+
+Le encanta de YaVino: El contenido visual y las catas guiadas en video. Colecciona cada ficha en su álbum como un diario de sensaciones
+        <footer class="blockquote-footer mt-3">Lucía</footer>
+      </blockquote>
+    </div>
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+      <blockquote class="blockquote p-4">
+        “Comentario de cliente.”
+        <footer class="blockquote-footer mt-3">Cliente 1</footer>
+      </blockquote>
+    </div>
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+      <blockquote class="blockquote p-4">
+        “Comentario de cliente.”
+        <footer class="blockquote-footer mt-3">Cliente 1</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+<!-- /TESTIMONIALS -->
+
+<!-- SECCIÓN A: Texto centrado sin imagen -->
+<section class="section-spacing container text-center">
+  <h2 class="display-5" class="h2-custom">Título destacado</h2>
+  <p class="lead-custom">Un texto breve para explicar o presentar algo importante.</p>
+  <div class="mt-4 d-flex justify-content-center gap-3">
+    <a href="#" class="btn btn-primary">Acción principal</a>
+    <a href="#" class="btn btn-outline-primary">Acción secundaria</a>
+  </div>
+</section>
+
+<!-- GALERÍA B: Masonry layout con column-count (hay controles en el css)-->
+<section class="section-spacing container py-5">
+  <h2 class="text-center mb-5 text-uppercase fw-bold" class="h2-custom">Galería tipo Masonry</h2>
+  
+  <div class="masonry__container">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x300" alt="Imagen 1">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x600" alt="Imagen 2">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x350" alt="Imagen 3">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x500" alt="Imagen 4">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x250" alt="Imagen 5">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x450" alt="Imagen 6">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x400" alt="Imagen 7">
+    <img class="masonry__item" src="https://imageplaceholder.net/400x550" alt="Imagen 8">
+  </div>
+</section>
+
+
+<!-- CONTACT FORM: Formulario de contacto -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Formulario de Contacto</h2>
+  <p class="p-custom">Envía un mensaje directamente desde la web.</p>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Tu email">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- /CONTACT FORM -->
+
+<!-- FOOTER: Pie de página -->
+<footer class="text-center py-4">
+  <div class="container">
+    <p class="p-custom">© 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+</body>
+</html>
