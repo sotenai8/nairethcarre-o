@@ -7,7 +7,8 @@
     <title>Plantilla Visible - Belluccia 3</title>
 
     <!-- Tipografía desde Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Framework CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -21,269 +22,311 @@
 <body>
 
 <!-- NAVBAR: Menú de navegación fijo superior -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <!-- Logo o nombre del sitio -->
-    <a class="navbar-brand" href="#">YaVino</a>
-    <!-- Botón para mostrar menú en mobile -->
+
+<nav class="navbar navbar-expand-lg fixed-top desktop">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- Menú izquierda -->
+    <ul class="navbar-nav flex-row gap-3">
+      <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
+    </ul>
+
+    <!-- Logo al centro con aire -->
+    <a class="navbar-brand mx-5" href="#">
+      <img src="img/logoweb.png" alt="Logo" style="height: 50px;">
+    </a>
+
+    <!-- Menú derecha -->
+    <ul class="navbar-nav flex-row gap-3">
+      <li class="nav-item"><a class="nav-link" href="#">Experiencias</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">WineSwap</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+    </ul>
+
+    <!-- Botón mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- Ítems del menú -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Suscripción</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">MiCuenta</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-      </ul>
-    </div>
   </div>
 </nav>
+
 <!-- /NAVBAR -->
 
 <!-- HERO: Sección de portada con llamado a la acción -->
-<section class="section-spacing container-fluid d-flex align-items-center justify-content-between bgHero" style="min-height: 100vh; padding-top: 100px;">
-  <div class="row align-items-center">
-     <!-- Imagen destacada -->
+<section class="section-spacing container-fluid px-5 d-flex align-items-center bgHero" style="min-height: 100vh;">
+  <div class="row align-items-center position-relative" style="z-index: 2;"
+    <!-- Imagen destacada -->
     <div class="col-lg-6 text-center">
-      <img src="img/hero.png" class="img-fluid img-rounded" alt="Imagen Hero">
+      <img src="img/hero1.png" class="img-fluid img-rounded" alt="Imagen Hero">
     </div>
     <!-- Texto principal -->
     <div class="col-lg-6">
       <h1 class="h1-custom">Pequeños rituales que despiertan grandes sentidos</h1>
-      <p class="p-custom">Vinos, secretos y un 20% off para iniciar tu ritual sin esfuerzo. El viaje comiendo con un brindis aún más dulce.</p>
-      <div class="d-flex gap-3 mt-4">
-        <a href="#" class="btn btn-dark">Suscribete al placer</a>
-      
+      <p class="p-custom">
+  <span class="fw-semibold">Vinos, secretos y un 20% off para iniciar tu ritual sin esfuerzo. El viaje comienza con un brindis aún más dulce<class="fw-bold"></span>.
+</p>
+      <a href="#" class="btn btn-primary mt-3">Suscribirse al placer</a>
       </div>
     </div>
-   
   </div>
 </section>
 <!-- /HERO -->
-<!-- SERVICES: Servicios o funcionalidades -->
-<section class="section-spacing container text-center bgRosita">
-  <h2 class="h2-custom">Tres pasos, un ritual</h2>
-  <p class="mb-5">Elige tu suscripción, recibe cada mes una caja con vinos, experiencias y secretos, y vives tu ritual sensorial sin moverte de casa.</p>
-  <div class="row">
-    <!-- Cada columna es una tarjeta de servicio -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4">
-        <img src="img/Descubre.png" class="mb-3" alt="Servicio">
-        <h5>Descubre</h5>
-        <p class="p-custom">Elige tu plan y deja que los vinos te encuentren a ti. La sorpresa empieza en cada elección.</p>
-      </div>
-    </div>
-    <!-- Cada columna es una tarjeta de servicio -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4">
-        <img src="img/Disfruta.png" class="mb-3" alt="Servicio">
-        <h5>Recibe tu caja</h5>
-        <p class="p-custom">Tu ritual mensual llega a tu puerta. Vinos, experiencias y secretos para descubrir sin esfuerzo.</p>
-      </div>
-    </div>
-    <!-- Cada columna es una tarjeta de servicio -->
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 p-4">
-        <img src="img/Recibe.png" class="mb-3" alt="Servicio">
-        <h5>Disfruta sin apuro</h5>
-        <p class="p-custom">Descorcha, prueba, comparte. Cada botella guarda un instante, y cada instante, una historia.</p>
-      </div>
-    </div>
-    <!-- ... repetir estructura para más servicios ... -->
-  </div>
-</section>
-
-<!-- SECCIÓN D: Dos columnas iguales con texto e imagen -->
-<section class="section-spacing container bgRosita">
-  <div class="row align-items-center">
-    <!-- Imagen a la izquierda -->
-    <div class="col-md-6 text-center mb-4 mb-md-0">
-      <img src="img/nosotros.png" class="img-fluid img-rounded" alt="Imagen">
-    </div>
-    <!-- Texto a la derecha -->
-    <div class="col-md-6 text-center text-md-start">
-      <h3 class="display-6" class="h3-custom">¿Por qué nosotros?</h3>
-      <p class="lead-custom">Porque no vendemos solo vino: curamos experiencias. En YaVino cada caja es un ritual sensorial diseñado para sorprenderte, emocionarte y conectar con lo que realmente te gusta. Somos ese puente entre lo cotidiano y lo extraordinario, entre el buen gusto y la magia de brindar diferente.</p>
-      <a href="#" class="btn btn-primary">Suscribete al placer</a>
-    </div>
-  </div>
-</section>
-
-<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
-<section class="section-spacing container text-center bgMensuales">
-  <h2 class="h2-custom">Tu Ritual Mensual</h2>
-  <p class="p-custom">Cada mes, una nueva caja llega a tu puerta para iniciar el viaje. No es solo vino: es una atmósfera, una pausa, una invitación a reconectar con tu mundo interior.
-</p>
-  
-  <div class="row mt-5">
+<!-- TRES PASOS, UN RITUAL: Servicios o funcionalidades -->
+<section class="section-spacing container-fluid py-5 text-center bgRosita">
+  <div class="container">
+    <h2 class="h2-custom">Tres pasos, un ritual</h2>
+    <p class="mb-5">Elige tu suscripción, recibe cada mes una caja con vinos, experiencias y secretos, y vive tu ritual sensorial sin moverte de casa.</p>
     
-    <!-- Card: Plan Básico -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100">
-        <!-- Título y precio -->
-        <h2 class="text-uppercase">Alba</h2>
-        <p class="display-6 text-primary">75.000 $ARS <small></small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="img/Alba.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-4 card-transparent">
+          <img src="img/Descubre.png" class="mb-3" alt="Servicio">
+          <h5>Descubre</h5>
+          <p class="p-custom">Elige tu plan y deja que los vinos te encuentren a ti. La sorpresa empieza en cada elección.</p>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-4 card-transparent">
+          <img src="img/Disfruta.png" class="mb-3" alt="Servicio">
+          <h5>Recibe tu caja</h5>
+          <p class="p-custom">Tu ritual mensual llega a tu puerta. Vinos, experiencias y secretos para descubrir sin esfuerzo.</p>
+        </div>
+      </div>
 
-        <!-- Descripción -->
-        <p class="p-custom">Perfecto para empezar.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>2 botellas seleccionadas</li>
-          <li>Ficha de cata impresa</li>
-          <li>Video Explicativo</li>
-          <li>Carta de maridajes</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-4 card-transparent">
+          <img src="img/Recibe.png" class="mb-3" alt="Servicio">
+          <h5>Disfruta sin apuro</h5>
+          <p class="p-custom">Descorcha, prueba, comparte. Cada botella guarda un instante, y cada instante, una historia.</p>
+        </div>
       </div>
     </div>
-
-    <!-- Card: Plan Pro (Recomendado) -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100 border border-primary">
-        <!-- Título y precio -->
-        <h2 class="text-uppercase">Aurora</h2>
-        <p class="display-6 text-primary">105.000 $ARS <small></small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="img/Aurora.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
-
-        <!-- Descripción -->
-        <p class="p-custom">Ideal para quienes buscan más.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>3 botellas seleccionadas</li>
-          <li>Ficha de cata impresa</li>
-          <li>Carta de cócteles</li>
-          <li>Carta de maridaje</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
-      </div>
-    </div>
-
-    <!-- Card: Plan Full -->
-    <div class="col-md-4 mb-4">
-      <div class="card p-4 h-100">
-        <!-- Título y precio -->
-        <h2 class="text-uppercase">Ocaso</h2>
-        <p class="display-6 text-primary">155.000 $ARS <small></small></p>
-        
-        <!-- Imagen ilustrativa -->
-        <img src="img/Ocaso.png" class="img-fluid img-rounded my-3" alt="Plan Full">
-
-        <!-- Descripción -->
-        <p class="p-custom">La experiencia completa.<br><strong>Incluye:</strong></p>
-        
-        <!-- Lista de beneficios -->
-        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
-          <li>3 botellas seleccionadas</li>
-          <li>Ficha de cata impresa</li>
-          <li>Carta de cócteles</li>
-          <li>Pase Acumulable</li>
-        </ul>
-
-        <!-- Botón CTA -->
-        <a href="#" class="btn btn-primary mt-3">Elegir plan</a>
-      </div>
-    </div>
-
   </div>
 </section>
+
+
+<!-- SECCIÓN NOSOTROS: Dos columnas iguales con texto e imagen -->
+<section class="section-spacing container-fluid bgRosita">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Imagen a la izquierda -->
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="img/nosotros.png" class="img-fluid img-rounded" alt="Imagen">
+      </div>
+      <!-- Texto a la derecha -->
+      <div class="col-md-6 text-center text-md-start">
+        <h3 class="display-6 mb-4 fw-bold h2-custom">¿Por qué nosotros?</h3>
+        <p class="p-custom">
+          Porque no vendemos solo vino: <strong>curamos experiencias</strong>. En YaVino cada caja es un ritual sensorial diseñado para <strong>sorprenderte, emocionarte y conectar</strong> con lo que realmente te gusta. Somos puente entre lo cotidiano y lo extraordinario, entre el buen gusto y <strong>la magia de brindar diferente.</strong>
+        </p>
+        <a href="#" class="btn btn-primary mt-3">Suscribirse al placer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas-->
+<section class="section-spacing container-fluid text-center bgMensuales">
+  <div class="container text-center">
+    <h2 class="h5-custom mb-3">Tu Ritual Mensual</h2>
+    <img src="img/rituales.png" alt="separador" class="mb-4">
+    <p class="p-light mx-auto mb-5" style="max-width: 720px;">
+        Cada mes, una nueva caja llega a tu puerta para iniciar el viaje. No es solo vino: es una atmósfera, una pausa, una invitación a reconectar con tu mundo interior.
+    
+
+    <div class="row mt-5">
+      
+      <!-- CARD 1: Alba -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100 card-alba">
+          <h2 class="h2-alba text-center">Alba</h2>
+          <p class="p-alba">Comienza tu ritual</p>
+          <img src="img/Alba.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+          <p class="p-custom"><br><strong>Incluye:</strong></p>
+
+          <ul class="list-unstyled text-center">
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">2 botellas seleccionadas</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Ficha de cata ilustrada</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Video explicativo</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Carta de maridaje</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Carta de cócteles</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Envío gratuito</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Acceso WineSwap (1 envío al mes)</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">10% de dto. en Vinotecas</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+          </ul>
+
+          <p class="fw-bold display-6 text-primary">$120.000.-</p>
+          <a href="#" class="btn btn-primary mt-3 text-center">Suscribirse</a>
+        </div>
+      </div>
+
+      <!-- CARD 2: Aurora -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100 card-aurora">
+          <h2 class="h2-aurora text-center">Aurora</h2>
+          <p class="p-aurora">Explora sin límites</p>
+          <img src="img/Aurora.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
+          <p class="p-custom"><br><strong>Incluye:</strong></p>
+
+          <ul class="list-unstyled text-center">
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">3 botellas seleccionadas</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Ficha de cata ilustrada</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Video explicativo</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Carta de maridaje</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Sacacorchos exclusivo</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Envío gratuito</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Acceso WineSwap (Ilimitado)</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">15% de dto. en Vinotecas</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+          </ul>
+
+          <p class="fw-bold display-6 text-primary">$175.000.-</p>
+          <a href="#" class="btn btn-primary mt-3">Suscribirse</a>
+        </div>
+      </div>
+
+      <!-- CARD 3: Ocaso -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 -100 card-ocaso">
+          <h2 class="h2-ocaso text-center">Ocaso</h2>
+          <p class="p-ocaso">Sumérgete en el placer </p>
+          <img src="img/Ocaso.png" class="img-fluid img-rounded my-3" alt="Plan Full">
+          <p class="p-custom"><br><strong>Incluye:</strong></p>
+
+          <ul class="list-unstyled text-center">
+            <li class="mb-4"><p class="fw-semibold m-0">3 botellas seleccionadas</p><img src="img/ocasos.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Ficha de cata ilustrada</p><img src="img/ocasos.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Video explicativo</p><img src="img/ocasos.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Sacacorchos exclusivo</p><img src="img/ocasos.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Pase Ocasao</p><img src="img/ocasos.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Envío gratuito</p><img src="img/ocasos.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">Acceso WineSwap (Ilimitado)</p><img src="img/ocasos.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+            <li class="mb-4"><p class="fw-semibold text-primary m-0">15% de dto. en Vinotecas</p><img src="img/ocasos.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
+          </ul>
+
+          <p class="fw-bold display-6 text-primary">$255.000.-</p>
+          <a href="#" class="btn btn-primary mt-3">Suscribirse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- /PLANES DE SUSCRIPCIÓN -->
 
-<!-- SECCIÓN F: Beneficios sobre fondo de color con íconos de Bootstrap -->
-<section class="section-spacing text-center py-5">
+<!-- SECCIÓN WINESWAP: Beneficios sobre fondo de color con íconos de Bootstrap -->
+<section class="section-spacing container-fluid text-center bgRosa">
   <div class="container">
-    <h2 class="mb-5 text-uppercase fw-bold" class="h2-custom">WineSwap</h2>
-      <p class="p-custom">Cada mes, una nueva caja llega a tu puerta para iniciar el viaje. No es solo vino: es una atmósfera, una pausa, una invitación a reconectar con tu mundo interior.
-</p>
-    <div class="row">
-      
+    <h2 class="h2-custom mb-2">WineSwap</h2>
+    <p class="p-custom mx-auto mb-5" style="max-width: 720px;">
+      Cada mes, una nueva caja llega a tu puerta para iniciar el viaje. No es solo vino: es una atmósfera, una pausa, una invitación a reconectar con tu mundo interior.
+    </p>
+    
+    <div class="row mt-3">
       <!-- Ítem 1 -->
-      <div class="col-md-3 mb-3">
-      <img src="img/plan.png" class="img-fluid img-rounded" alt="Imagen">
+      <div class="col-md-3">
+        <img src="img/plan.png" class="img-fluid img-rounded mb-3" alt="Imagen">
         <h5>Elige tu plan</h5>
         <p class="p-custom">Alba, Aurora u Ocaso. Tú decides cuánto explorar cada mes.</p>
       </div>
+
       <!-- Ítem 2 -->
-      <div class="col-md-3 mb-3">
-        <img src="img/puerta.png" class="img-fluid img-rounded" alt="Imagen">
+      <div class="col-md-3 mb-4">
+        <img src="img/puerta.png" class="img-fluid img-rounded mb-3" alt="Imagen">
         <h5>El instante llega a tu puerta</h5>
-        <p class="p-custom">Recibe tu selección de vinos, junto con cartas de cata, maridajes y secretos para explorar.</p>
+        <p class="p-custom">Recibe tu selección de vinos, cartas de cata, maridajes y secretos que explorar.</p>
       </div>
+
       <!-- Ítem 3 -->
-      <div class="col-md-3 mb-3">
-        <img src="img/hable.png" class="img-fluid img-rounded" alt="Imagen">
+      <div class="col-md-3 mb-4">
+        <img src="img/hable.png" class="img-fluid img-rounded mb-3" alt="Imagen">
         <h5>Deja que el vino hable</h5>
         <p class="p-custom">Prueba, siente, anota. Algunos vinos te eligen, otros quizás no... y está bien.</p>
       </div>
-       <!-- Ítem 4 -->
-      <div class="col-md-3 mb-3">
-        <img src="img/plan.png" class="img-fluid img-rounded" alt="Imagen">
-        <h5>Dales una nuevaa historia</h5>
-        <p class="p-custom">¿No conectaste con una botella? Canjeala desde tu espacio WineSwap. Otra persona puede vivir lo que tu no.</p>
+
+      <!-- Ítem 4 -->
+      <div class="col-md-3 mb-4">
+        <img src="img/historia.png" class="img-fluid img-rounded mb-3" alt="Imagen">
+        <h5>Dales una nueva historia</h5>
+        <p class="p-custom">¿No conectaste con una botella? Canjeala desde tu espacio WineSwap.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS: Opiniones de clientes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Testimonios</h2>
-  <p class="p-custom">Comentarios reales de usuarios para generar confianza.</p>
-  <div class="row">
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        No tengo tiempo de buscar vinos únicos, pero quiero sorprenderme. Me encanta cuando la caja llega, porque no sé qué me espera. Es como un ritual mensual solo para mí.
 
-Plan: Ocaso
+<!-- TESTIMONIOS: Opiniones de clientes -->
 
-Le encanta de YaVino: El contenido visual y las catas guiadas en video. Colecciona cada ficha en su álbum como un diario de sensaciones
-        <footer class="blockquote-footer mt-3">Lucía</footer>
-      </blockquote>
+<section class="section-spacing container-fluid text-center bgRosa">
+  <h2 class="h2-custom mb-3">Testimonios con aroma a vino</h2>
+  <p class="p-custom mb-5">Historias compartidas. Brindis que inspiran.</p>
+  <div class="row justify-content-center">
+
+    <!-- Testimonio 1 -->
+    <div class="col-md-3 mb-4">
+      <div class="card p-4 h-100">
+        <h6 class="text-start">Recomendadísimo!</h6>
+        <p class="text-start mb-2">★★★★★</p>
+        <p class="p-custom text-start small">No tengo tiempo de buscar vinos únicos, pero quiero sorprenderme. Me encanta cuando la caja llega, porque no sé qué me espera. Es como un ritual mensual solo para mí.</p>
+        <p class="p-custom text-start small"><strong>Le encanta de YaVino:</strong> El contenido visual y las catas guiadas en video. Colecciona cada ficha en su álbum como un diario de sensaciones.</p>
+        <div class="d-flex align-items-center mt-3">
+          <img src="img/avatar1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Lucía">
+          <div class="text-start">
+            <h6 class="mb-0">Lucía</h6>
+            <small>Plan: Ocaso</small>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
+
+    <!-- Testimonio 2 destacado -->
+    <div class="col-md-4 mb-4 testimonial-featured">
+      <div class="card p-4 h-100">
+        <h6 class="text-start">Recomendadísimo!</h6>
+        <p class="text-start mb-2">★★★★★</p>
+        <p class="p-custom text-start small">No tengo tiempo de buscar vinos únicos, pero quiero sorprenderme. Me encanta cuando la caja llega, porque no sé qué me espera. Es como un ritual mensual solo para mí.</p>
+        <p class="p-custom text-start small"><strong>Le encanta de YaVino:</strong> El contenido visual y las catas guiadas en video. Colecciona cada ficha en su álbum como un diario de sensaciones.</p>
+        <div class="d-flex align-items-center mt-3">
+          <img src="img/avatar1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Lucía">
+          <div class="text-start">
+            <h6 class="mb-0">Lucía</h6>
+            <small>Plan: Ocaso</small>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
+
+    <!-- Testimonio 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="card p-4 h-100">
+        <h6 class="text-start">Recomendadísimo!</h6>
+        <p class="text-start mb-2">★★★★★</p>
+        <p class="p-custom text-start small">No tengo tiempo de buscar vinos únicos, pero quiero sorprenderme. Me encanta cuando la caja llega, porque no sé qué me espera. Es como un ritual mensual solo para mí.</p>
+        <p class="p-custom text-start small"><strong>Le encanta de YaVino:</strong> El contenido visual y las catas guiadas en video. Colecciona cada ficha en su álbum como un diario de sensaciones.</p>
+        <div class="d-flex align-items-center mt-3">
+          <img src="img/avatar1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Lucía">
+          <div class="text-start">
+            <h6 class="mb-0">Lucía</h6>
+            <small>Plan: Ocaso</small>
+          </div>
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
+
+
 <!-- /TESTIMONIALS -->
 
-<!-- SECCIÓN A: Texto centrado sin imagen -->
-<section class="section-spacing container text-center">
-  <h2 class="display-5" class="h2-custom">Título destacado</h2>
-  <p class="lead-custom">Un texto breve para explicar o presentar algo importante.</p>
-  <div class="mt-4 d-flex justify-content-center gap-3">
-    <a href="#" class="btn btn-primary">Acción principal</a>
-    <a href="#" class="btn btn-outline-primary">Acción secundaria</a>
-  </div>
-</section>
-
 <!-- GALERÍA B: Masonry layout con column-count (hay controles en el css)-->
-<section class="section-spacing container py-5">
-  <h2 class="text-center mb-5 text-uppercase fw-bold" class="h2-custom">Galería tipo Masonry</h2>
+<section class="section-spacing container-fluid text-center bgRosita">
+  <h2 class="text-center mb-5 fw-bold h2-custom">Instantes para atesorar</h2>
   
   <div class="masonry__container">
     <img class="masonry__item" src="https://imageplaceholder.net/400x300" alt="Imagen 1">
@@ -300,34 +343,93 @@ Le encanta de YaVino: El contenido visual y las catas guiadas en video. Coleccio
 
 
 <!-- CONTACT FORM: Formulario de contacto -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Formulario de Contacto</h2>
-  <p class="p-custom">Envía un mensaje directamente desde la web.</p>
+<section class="section-spacing container-fluid text-center bgRosita">
+  <h2 class="h2-custom">¿Nos escribes entre copas?</h2>
+  <p class="p-custom mx-auto mb-5" style="max-width: 720px;">
+    Si quieres contarnos algo, hacer una consulta o simplemente brindar con palabras, estamos a un sorbo de distancia.
+  </p>
   <div class="row justify-content-center">
     <div class="col-md-6">
       <form>
         <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Tu nombre">
+          <input type="text" class="form-control" placeholder="Nombre y Apellido">
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Tu email">
+          <input type="tel" class="form-control" placeholder="Teléfono (opcional)">
         </div>
         <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+          <input type="email" class="form-control" placeholder="Correo electrónico">
         </div>
-        <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+        </div>
+        <div class="mb-3">
+          <input type="file" class="form-control">
+          <small class="form-text text-muted">
+            Adjunta hasta 10 archivos. Tamaño máximo por archivo: 20MB.
+          </small>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Enviar</button>
       </form>
     </div>
   </div>
 </section>
+
 <!-- /CONTACT FORM -->
 
 <!-- FOOTER: Pie de página -->
-<footer class="text-center py-4">
+<footer class="text-light py-5">
   <div class="container">
-    <p class="p-custom">© 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.</p>
+    <div class="row">
+
+      <!-- Columna 1: Logo + datos -->
+      <div class="col-md-3 mb-4">
+        <img src="img/logobl.png" alt="Logo" style="height: 40px;" class="mb-3">
+        <p>Av. del Libertador 6550.<br>Belgrano</p>
+        <p><strong>Teléfono:</strong> 11-5844-8585<br>
+        <strong>E-mail:</strong> hola@yavino.com.ar</p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#"><i class="bi bi-instagram fs-4 text-light hover-light"></i></a>
+          <a href="#"><i class="bi bi-youtube fs-4 text-light hover-light"></i></a>
+          <a href="#"><i class="bi bi-whatsapp fs-4 text-light hover-light"></i></a>
+          <a href="#"><i class="bi bi-tiktok fs-4 text-light hover-light"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Mapa del sitio -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold mb-3">MAPA DEL SITIO</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Inicio</a></li>
+          <li><a href="#" class="footer-link">Envíos</a></li>
+          <li><a href="#" class="footer-link">Mi Cuenta</a></li>
+          <li><a href="#" class="footer-link">Suscripciones</a></li>
+          <li><a href="#" class="footer-link">WineSwap</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Ayuda -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold mb-3">AYUDA</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Centro de ayuda</a></li>
+          <li><a href="#" class="footer-link">Términos y condiciones</a></li>
+          <li><a href="#" class="footer-link">FAQ</a></li>
+          <li><a href="#" class="footer-link">Testimonios</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Horarios -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold mb-3">HORARIO DE ATENCIÓN</h6>
+        <p>Lunes a Viernes 9 a 17 hs</p>
+        <p>Sábados 10 a 15 hs</p>
+      </div>
+
+    </div>
   </div>
 </footer>
+
 <!-- /FOOTER -->
 
 <!-- Bootstrap Bundle JS (incluye Popper) -->
