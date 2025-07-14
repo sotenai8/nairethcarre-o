@@ -1,6 +1,5 @@
 /* 1. VARIABLES DE DISEÑO */
 :root {
-
   /* Colores fondo - tipograffíaa*/
   --primary-color: #0f093a;
   --secondary-color: #fff3fc;
@@ -14,8 +13,6 @@
   --cta: #c62a40;
 
   --font-family-base: "Raleway", sans-serif;
-
-  
 }
 /*Información base para mi 
 
@@ -27,8 +24,6 @@ fw-bold → 700*/
 
 /* 2. ESTILOS GENERALES */
 body {
- 
-
 }
 
 /* 3. NAVBAR */
@@ -39,7 +34,7 @@ body {
 }
 
 .navbar.scrolled {
-  background-color: #fff3fc ;
+  background-color: #fff3fc7e;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -89,34 +84,40 @@ p {
   color: #0f093a;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
 
 .bgHero {
   background: url("img/hero5.png");
-  background-size: contain; 
+  background-size: contain;
   background-repeat: repeat-x;
   background-position: center;
   position: relative;
+}
 
+.bgDetalle {
+  background: url("img/detalle.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  position: relative;
 }
 .bgRosita {
-  background-color: #fff3fc ; /* Podés usar cualquier color en hex, rgb, o nombre */
+  background-color: #fff3fc; /* Podés usar cualquier color en hex, rgb, o nombre */
 }
 
 .bgRosa {
-  background-color: var(--tercer-color) ; /* Podés usar cualquier color en hex, rgb, o nombre */
+  background-color: var(
+    --tercer-color
+  ); /* Podés usar cualquier color en hex, rgb, o nombre */
 }
-
 
 .bgMensuales {
   background: url("img/mensuales.png");
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top-center;
   position: relative;
-
 }
 
 /* Botones */
@@ -217,7 +218,7 @@ section h2::after {
   border: none; /* opcional: sin borde */
 }
 
-  /* TARJETA ALBA*/
+/* TARJETA ALBA*/
 .card-alba {
   background-color: var(--secondary-color); /* o cualquier color que quieras */
   color: var(--alba); /* color del texto, asegurate que contraste bien */
@@ -243,7 +244,7 @@ section h2::after {
   line-height: 1;
 }
 
- /* TARJETA AURORA*/
+/* TARJETA AURORA*/
 .card-aurora {
   background-color: var(--secondary-color); /* o cualquier color que quieras */
   color: var(--aurora); /* color del texto, asegurate que contraste bien */
@@ -270,7 +271,7 @@ section h2::after {
   line-height: 1;
 }
 
- /* TARJETA OCASO*/
+/* TARJETA OCASO*/
 .card-ocaso {
   background-color: var(--secondary-color); /* o cualquier color que quieras */
   color: var(--ocaso); /* color del texto, asegurate que contraste bien */
@@ -311,26 +312,27 @@ form .form-control {
   border: 1px solid #ced4da;
 }
 
-
 /* 9. FOOTER */
 footer {
   background-color: var(--primary-color);
   font-size: 0.9rem;
 }
-footer p{color: var(--secondary-color);}
-  a{
-    text-decoration: none;
-  }
-  
-  footer a{
-    color: var(--secondary-color);
-    transition: .25s;
-  }
+footer p {
+  color: var(--secondary-color);
+}
+a {
+  text-decoration: none;
+}
 
-  footer a:hover{
-    font-weight: 700;
-    color: var(--cta);
-  }
+footer a {
+  color: var(--secondary-color);
+  transition: 0.25s;
+}
+
+footer a:hover {
+  font-weight: 700;
+  color: var(--cta);
+}
 
 /* 10. IMÁGENES */
 img.rounded-circle {
@@ -338,41 +340,142 @@ img.rounded-circle {
 }
 
 /* 11. GALERÍA */
-  .masonry__container {
-    columns: 3 300px;
-    column-gap: 1rem;
-    padding: 0 1rem;
-  }
+.gallery-masonry {
+  column-count: 2;
+  column-gap: 1rem;
+}
 
-  .masonry__item {
-    width: 100%;
-    margin-bottom: 1rem;
-    display: block;
-    break-inside: avoid;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
+.gallery-masonry img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  break-inside: avoid;
+}
 
-  .masonry__item:hover {
-    transform: scale(1.03);
+/* Responsive: 3 columnas en desktop */
+@media (min-width: 768px) {
+  .gallery-masonry {
+    column-count: 3;
   }
+}
 
-  @media (max-width: 768px) {
-    .masonry__container {
-      columns: 2 200px;
-    }
+@media (min-width: 1200px) {
+  .gallery-masonry {
+    column-count: 4;
   }
+}
 
-  @media (max-width: 480px) {
-    .masonry__container {
-      columns: 1 100%;
-    }
-  }
+section.bgRosita:last-of-type {
+  margin-top: 0;
+  padding-top: 0;
+}
 
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
 /* ============================== */
+/*navbar*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+  background-color: #fff3fc;
+  position: relative;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgb(243, 241, 241);
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+.navbar-nav.open {
+  display: block;
+}
+
+.navbar-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 11;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #0f093a;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.navbar-toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.navbar-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/* Desktop */
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    position: static;
+    transform: none;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-nav {
+    display: block !important;
+    position: static;
+    background: none;
+    padding: 0;
+  }
+
+  .navbar-nav ul {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
 
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
@@ -384,9 +487,9 @@ img.rounded-circle {
   font-weight: 700;
   line-height: 1.2;
   color: var(--primary-color);
-   font-family: "Namdhinggo", serif;
+  font-family: "Namdhinggo", serif;
   font-weight: 800;
-  font-style: normal
+  font-style: normal;
 }
 
 .h2-custom {
@@ -420,6 +523,24 @@ img.rounded-circle {
   font-style: normal;
 }
 
+.h5-detalle {
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--ocaso);
+  font-family: "Namdhinggo", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.h5-custom {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--secondary-color);
+  font-family: "Namdhinggo", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
 /* PÁRRAFOS Y TEXTOS */
 .p-custom {
   font-size: 1.2rem;
@@ -430,6 +551,12 @@ img.rounded-circle {
 .p-light {
   font-size: 1.2rem;
   color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+.p-dark {
+  font-size: 1rem;
+  color: var(--primary-color);
   line-height: 1.6;
 }
 
