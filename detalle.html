@@ -23,52 +23,48 @@
 
 <!-- NAVBAR: Menú de navegación fijo superior -->
 
-<header class="navbar">
-  <!-- Menú hamburguesa (solo visible en mobile) -->
-  <button class="navbar-toggle" aria-label="Abrir menú" onclick="document.querySelector('.navbar-nav').classList.toggle('open'); this.classList.toggle('active');">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
-  <!-- Logo centrado -->
-  <div class="navbar-brand">
-    <a href="#"><img src="img/logoweb.png" alt="Logo YaVino"></a>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="#">
+  <img src="img/logoweb.png" alt="Logo" style="height: 40px;">
+</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Suscripciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">WineSwap</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">MiCuenta</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
   </div>
-
-  <!-- Navegación -->
-  <nav class="navbar-nav">
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#turitualmensual">Suscripciones</a></li>
-      <li><a href="#wineswap">WineSwap</a></li>
-      <li><a href="#formulario">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+</nav>
 
 
 <!-- /NAVBAR -->
 
 <!-- HERO: Sección de portada con llamado a la acción -->
-<section id="iniciod" class="section-spacing container-fluid bgDetalle" style="min-height: 100vh; padding-top: 40px;">
+<section id="#iniciod" class="section-spacing fluid bgDetalle" style="min-height: 100vh; padding-top:100px;">
   <div class="row align-items-center px-5">
 
     <!-- Imagen -->
     <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="img/deta_box_1.png" class="img-fluid img-rounded w-300" style="max-width: 600px;" alt="Imagen Hero">
+      <img src="img/deta_box_1.png" class="img-fluid img-rounded w-500" style="max-width: 600px;" alt="Imagen Hero">
     </div>
 
     <!-- Texto -->
     <div class="col-lg-6 px-4">
       <h1 class="h1-custom display-5">Paquete Ocaso</h1>
-      <p class="p-custom fw-semibold">
-        Diseñada para quienes buscan más que vino: sensaciones, descubrimientos y momentos para coleccionar.
-      </p>
+      <p class="p-custom fw-semibold" style="max-width:700px;">Diseñada para quienes buscan más que vino: sensaciones, descubrimientos y momentos para coleccionar.</p>
        <p class="p-custom fw-bold">
         Una suscripción que trasciende el ritual.
-      </p>
+        </p>
 
       <ul class="list-unstyled">
         <li class="mb-3"><p class="fw-semibold m-0">✔ 3 botellas seleccionadas</p></li>
@@ -76,8 +72,10 @@
         <li class="mb-3"><p class="fw-semibold m-0">✔ Carta de cócteles</p></li>
         <li class="mb-3"><p class="fw-semibold m-0">✔ Pase Ocaso acumulable</p></li>
       </ul>
-
-      <a href="index.html" class="btn btn-primary mt-3">Suscribirse al placer</a>
+      <p class="p-mes fw-bold">
+        $255.000 /mes
+        </p>
+      <a href="index.html" class="btn btn-dark mt-3">Suscribirse al placer</a>
     </div>
 
   </div>
@@ -89,7 +87,7 @@
 <!-- QUE CONTIENE LA CAJA -->
 <section id="secretos" class="section-spacing container-fluid py-3 text-center bgRosa">
   <div class="container">
-    <h2 class="h2-custom" style="color: var(--ocaso)">Secretos del Ocaso</h2>
+    <h2 class="h2-custom">Secretos del Ocaso</h2>
     <p class="mb-5">Descubrí qué tesoros esconde esta suscripción: un ritual íntimo que te invita a explorar, brindar y dejarte sorprender.</p>
     
     <div class="row">
@@ -127,9 +125,9 @@
 
 
 <!-- SECCIÓN BENEFICIOS DE LA SUSCRIPCION: Beneficios sobre fondo de color con íconos de Bootstrap -->
-<section id="beneficios" class="section-spacing container-fluid text-center bgRosa">
+<section id="#beneficios" class="section-spacing container-fluid text-center bgBeneficios" style="padding-top: 100px; padding-bottom:250px;">
   <div class="container">
-    <h2 class="h2-custom mb-2" style="color: var(--ocaso)">Beneficios de la Suscripción</h2>
+    <h2 class="h2-custom mb-2">Beneficios de la Suscripción</h2>
     <p class="p-custom mx-auto mb-5" style="max-width: 720px;">Con tu suscripción YaVino, cada mes trae más que vino:
     </p>
     
@@ -137,28 +135,28 @@
       <!-- Ítem 1 -->
       <div class="col-md-3">
         <img src="img/pagos.png" class="img-fluid img-rounded mb-3" alt="Imagen">
-        <h5 style="color: var(--ocaso)">Medios de Pago</h5>
+        <h5 class="h5-detalle"">Medios de Pago</h5>
         <p class="p-custom" class="mb-5">Elige cómo brindar: transferencia o tarjeta. Que el ritual empiece desde el primer click.</p>
       </div>
 
       <!-- Ítem 2 -->
       <div class="col-md-3 mb-4">
         <img src="img/enviogratis.png" class="img-fluid img-rounded mb-3" alt="Imagen">
-        <h5 style="color: var(--ocaso)">Envío gratis</h5>
+        <h5 class="h5-detalle"">Envío gratis</h5>
         <p class="p-custom">No importa donde estés, nosotros nos encargamos de que llegue.</p>
       </div>
 
       <!-- Ítem 3 -->
       <div class="col-md-3 mb-4">
         <img src="img/vinotecas.png" class="img-fluid img-rounded mb-3" alt="Imagen">
-        <h5 style="color: var(--ocaso)">15% Off en Vinotecas</h5>
+        <h5 class="h5-detalle"">15% Off en Vinotecas</h5>
         <p class="p-custom">Descubre la más próxima a tu puerta y brinda con nuestros secretos a precios especiales.</p>
       </div>
 
       <!-- Ítem 4 -->
       <div class="col-md-3 mb-4">
         <img src="img/tienda.png" class="img-fluid img-rounded mb-3" alt="Imagen">
-        <h5 style="color: var(--ocaso)">10% Off en Tienda</h5>
+        <h5 class="h5-detalle"">10% Off en Tienda</h5>
         <p class="p-custom">¿No conectaste con una botella? Canjeala desde tu espacio WineSwap.</p>
       </div>
     </div>
@@ -175,11 +173,11 @@
       </div>
       <!-- Texto a la derecha -->
       <div class="col-md-6 text-center text-md-start">
-        <h3 class="display-6 mb-4 fw-bold h2-custom" style="color: var(--ocaso)">Envíos gratis ilimitados</h3>
+        <h3 class="display-6 mb-4 fw-bold h2-custom">Envíos gratis</h3>
         <p class="p-custom">
           Con Ocaso, el viaje no termina en la primera copa. Disfruta de envíos <strong>sin límite a través de nuestro WineSwap</strong> y cambia tus vinos cuantas veces quieras, sin costo, para que cada brindis sea exactamente el que imaginas.
         </p>
-        <a href="#iniciod" class="btn btn-primary mt-3">Suscribirse al placer</a>
+        <a href="#iniciod" class="btn btn-dark mt-3">Suscribirse al placer</a>
       </div>
     </div>
   </div>
@@ -196,52 +194,47 @@
 
     <div class="row mt-5 justify-content-center">
       
-      <!-- CARD 1: Alba -->
-      <div class="col-lg-5 mb-4">
-        <div class="card p-4 h-100 card-alba">
-          <h2 class="h2-alba text-center">Alba</h2>
-          <p class="p-alba">Comienza tu ritual</p>
-          <img src="img/Alba.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
-          <p class="p-custom"><strong>Incluye:</strong></p>
-
-          <ul class="list-unstyled text-center">
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">2 botellas seleccionadas</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">Video explicativo</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">Carta de maridaje</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">Envío gratuito</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">Acceso WineSwap (1 envío al mes)</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">10% de dto. en Vinotecas</p><img src="img/albas.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-          </ul>
-
-          <p class="fw-bold display-6 text-primary">$120.000.-</p>
-          <a href="index" class="btn btn-primary mt-3 text-center">Suscribirse</a>
+      
+        <!-- ALBA -->
+        <div class="col-md-4 mb-4">
+          <div class="card p-4 pt-5 h-100 card-alba">
+            <h2 class="h2-alba text-center">Alba</h2>
+            <p class="p-alba">Comienza tu ritual</p>
+            <img src="img/Alba.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+            <p class="p-custom"><br><strong>Incluye:</strong></p>
+            <ul class="list-unstyled text-center">
+              <li class="mb-4">2 botellas seleccionadas</li>
+              <li class="mb-4">Video explicativo</li>
+              <li class="mb-4">Carta de maridaje</li>
+              <li class="mb-4">Envío gratuito</li>
+              <li class="mb-4">Acceso WineSwap (1 envío al mes)</li>
+              <li class="mb-4">10% de dto. en Vinotecas</li>
+            </ul>
+            <p class="fw-bold display-6 text-primary">$120.000.-</p>
+            <a href="detalle.html" class="btn btn-dark mt-3">Suscribirse</a>
+          </div>
         </div>
-      </div>
 
-      <!-- CARD 2: Aurora -->
-      <div class="col-lg-5 mb-4">
-        <div class="card p-4 h-100 card-aurora">
-          <h2 class="h2-aurora text-center">Aurora</h2>
-          <p class="p-aurora">Explora sin límites</p>
-          <img src="img/Aurora.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
-          <p class="p-custom"><strong>Incluye:</strong></p>
-
-          <ul class="list-unstyled text-center">
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">3 botellas seleccionadas</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">Ficha de cata ilustrada</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">Sacacorchos exclusivo</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">Envío gratuito</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">Acceso WineSwap (Ilimitado)</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-            <li class="mb-4"><p class="fw-semibold text-primary m-0">15% de dto. en Vinotecas</p><img src="img/auroras.png" alt="separador" style="width: 80px; margin-top: 8px;"></li>
-          </ul>
-
-          <p class="fw-bold display-6 text-primary">$175.000.-</p>
-          <a href="index.html" class="btn btn-primary mt-3">Suscribirse</a>
-          
-
+        <!-- AURORA -->
+        <div class="col-md-4 mb-4">
+          <div class="card p-4 pt-5 h-100 card-aurora">
+            <h2 class="h2-aurora text-center">Aurora</h2>
+            <p class="p-aurora">Explora sin límites</p>
+            <img src="img/Aurora.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
+            <p class="p-custom"><br><strong>Incluye:</strong></p>
+            <ul class="list-unstyled text-center">
+              <li class="mb-4">3 botellas seleccionadas</li>
+              <li class="mb-4">Ficha de cata ilustrada</li>
+              <li class="mb-4">Sacacorchos exclusivo</li>
+              <li class="mb-4">Envío gratuito</li>
+              <li class="mb-4">Acceso WineSwap (Ilimitado)</li>
+              <li class="mb-4">15% de dto. en Vinotecas</li>
+            </ul>
+            <p class="fw-bold display-6 text-primary">$175.000.-</p>
+            <a href="detalle.html" class="btn btn-dark mt-3">Suscribirse</a>
+          </div>
         </div>
-      </div>
-
+      
     </div>
   </div>
 </section>
@@ -252,15 +245,15 @@
 <!-- TESTIMONIOS: Opiniones de clientes -->
 
 <!-- TESTIMONIOS -->
-<section id="testimoniosd" class="container-fluid text-center bgRosa pt-5 pb-5">
+<section id="testimoniosd" class="container-fluid text-center bgTestimonios pt-5 pb-5">
   <h2 class="h2-custom mb-3">Testimonios con aroma a vino</h2>
   <p class="p-custom mb-5">Historias compartidas. Brindis que inspiran.</p>
 
   <div class="row justify-content-center mb-5">
     <!-- Testimonio 1 -->
-    <div class="col-md-3 mb-4">
-      <div class="card p-4 h-100">
-        <h5 class="text-start" style="color: var(--ocaso)">Un ritual para mí, cada mes!</h5>
+    <div class="col-12 col-lg-2 d-flex">
+      <div class="card p-4 h-100 w-100">
+        <h5 class="text-start" style="color: var(--primary-color)">Un ritual para mí, cada mes!</h5>
         <p class="text-start mb-2" style="color: var(--ocaso)">★★★★</p>
         <p class="p-dark text-start small">
           Siempre busqué algo que me hiciera pausar la rutina y reconectar conmigo. Con Ocaso siento que cada caja es un susurro que me invita a disfrutar, sin apuro.
@@ -279,9 +272,9 @@
     </div>
 
     <!-- Testimonio 2 destacado -->
-    <div class="col-md-4 mb-4 testimonial-featured">
-      <div class="card p-4 h-100">
-        <h5 class="text-start" style="color: var(--ocaso)">Recomendadísimo!</h5>
+    <div class="col-12 col-lg-2 d-flex">
+      <div class="card p-4 h-100 w-100">
+        <h5 class="text-start" style="color: var(--primary-color)">Recomendadísimo!</h5>
         <p class="text-start mb-2" style="color: var(--ocaso)">★★★★★</p>
         <p class="p-dark text-start small">
           No tengo tiempo de buscar vinos únicos, pero quiero sorprenderme. Me encanta cuando la caja llega, porque no sé qué me espera. Es como un ritual mensual solo para mí.
@@ -300,9 +293,9 @@
     </div>
 
     <!-- Testimonio 3 -->
-    <div class="col-md-3 mb-4">
-      <div class="card p-4 h-100">
-        <h5 class="text-start" style="color: var(--ocaso)">Lo mejor!!!</h5>
+    <div class="col-12 col-lg-2 d-flex">
+      <div class="card p-4 h-100 w-100">
+        <h5 class="text-start" style="color: var(--primary-color)">Lo mejor!!!</h5>
         <p class="text-start mb-2" style="color: var(--ocaso)">★★★★</p>
         <p class="p-dark text-start small">
           Antes el vino era solo una bebida para mí. Ahora con Ocaso es un universo nuevo que exploro con cada caja.
@@ -322,8 +315,8 @@
   </div>
 </section>
 
-<!-- FORMULARIO -->
-<section id="formulario" class="section-spacing container-fluid text-center bgRosa">
+<!-- CONTACT FORM: Formulario de contacto -->
+<section id="#contacto" class="section-spacing container-fluid text-center bgRosa">
   <h2 class="h2-custom">¿Nos escribes entre copas?</h2>
   <p class="p-custom mx-auto mb-5" style="max-width: 720px;">
     Si quieres contarnos algo, hacer una consulta o simplemente brindar con palabras, estamos a un sorbo de distancia.
@@ -343,18 +336,12 @@
         <div class="mb-3">
           <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
         </div>
-        <div class="mb-3">
-          <input type="file" class="form-control">
-          <small class="form-text text-muted">
-            Adjunta hasta 10 archivos. Tamaño máximo por archivo: 20MB.
-          </small>
-        </div>
-        <button type="submit" class="btn btn-dark w-100">Enviar</button>
+        
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
       </form>
     </div>
   </div>
 </section>
-
 
 <!-- /CONTACT FORM -->
 
@@ -413,6 +400,14 @@
 
 <!-- /FOOTER -->
 
+<!-- FOOTER: Pie de página -->
+<footer class="text-center py-4">
+  <div class="container">
+    <p style="color: var(--secondary-color)">© 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.</p>
+    <p style="color: var(--secondary-color)">Carreño Naireth - Comisión 1 - Agus_Diego</p>
+  </div>
+</footer>
+<!-- /FOOTER -->
 <!-- Bootstrap Bundle JS (incluye Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 

@@ -5,7 +5,7 @@
   --secondary-color: #fff3fc;
   --tercer-color: #efd9ea;
   /* Colores bases de mi suscripciones*/
-  --ocaso: #ff5f2f;
+  --ocaso: #f78a38;
   --aurora: #d84a84;
   --alba: #6483c1;
 
@@ -13,6 +13,7 @@
   --cta: #c62a40;
 
   --font-family-base: "Raleway", sans-serif;
+
 }
 /*Información base para mi 
 
@@ -24,6 +25,12 @@ fw-bold → 700*/
 
 /* 2. ESTILOS GENERALES */
 body {
+  font-family: var(--font-family-base);
+  color: #212529;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* 3. NAVBAR */
@@ -34,25 +41,25 @@ body {
 }
 
 .navbar.scrolled {
-  background-color: #fff3fc7e;
+  background-color: var(--secondary-color);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .navbar-brand {
-  font-weight: 600;
-  font-size: 1.7rem;
+  font-weight: 800;
+  font-size: 1rem;
   color: var(--dark-color);
 }
 
 .nav-link {
-  color: var(--dark-color);
+  color: var(--primary-color);
   font-weight: 500;
   margin-left: 20px;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
+  color: var(--cta);
 }
 
 /* 4. HERO */
@@ -89,8 +96,8 @@ p {
 
 .bgHero {
   background: url("img/hero5.png");
-  background-size: contain;
-  background-repeat: repeat-x;
+  background-size: cover;
+  background-repeat: ;
   background-position: center;
   position: relative;
 }
@@ -102,14 +109,55 @@ p {
   background-position: center;
   position: relative;
 }
+
+.bgBeneficios {
+  background: url("img/beneficios.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  position: relative;
+}
+
 .bgRosita {
   background-color: #fff3fc; /* Podés usar cualquier color en hex, rgb, o nombre */
+}
+
+.bgRosita1 {
+  background: url("img/nosotrosf.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  position: relative;
 }
 
 .bgRosa {
   background-color: var(
     --tercer-color
   ); /* Podés usar cualquier color en hex, rgb, o nombre */
+}
+
+.bgRosa1 {
+  background: url("img/testimonios.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  position: relative;
+}
+
+.bgGaleria {
+  background: url("img/galeria.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  position: relative;
+}
+
+.bgTestimonios {
+  background: url("img/beneficios.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  position: initial;
 }
 
 .bgMensuales {
@@ -122,40 +170,38 @@ p {
 
 /* Botones */
 .btn {
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 10px 30px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
 
 .btn-dark {
-  background-color: #c62a40;
+  background-color: var(--cta);
   border: none;
 }
 
 .btn-dark:hover {
-  background-color: #791a26;
+  background-color: #6d0c0c;
 }
 
 .btn-outline-dark {
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--cta);
   color: var(--primary-color);
 }
 
 .btn-outline-dark:hover {
-  background-color: var(--primary-color);
-  color: #fff;
+  background-color: var(--cta);
+  color: var(--cta);
 }
 
-.btn.btn-primary {
+.btn-primary{
   background-color: var(--cta);
+  font-family: "Raleway", sans-serif;
   border: none;
-  border-radius: 10px;
-  width: 40%;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
+
+
 
 /* 5. SECCIONES */
 section {
@@ -222,13 +268,18 @@ section h2::after {
 .card-alba {
   background-color: var(--secondary-color); /* o cualquier color que quieras */
   color: var(--alba); /* color del texto, asegurate que contraste bien */
+  border: 4px solid var(--alba);
+  border-radius: 190px 190px 5px 5px;
+  background-color: white;
 }
 
 .card-alba p,
 .card-alba h2,
 .card-alba li {
-  color: var(--alba) !important;
+  color: var(--primary-color) !important;
 }
+
+
 /* Tipografía*/
 .h2-alba {
   font-size: 5rem;
@@ -248,13 +299,16 @@ section h2::after {
 .card-aurora {
   background-color: var(--secondary-color); /* o cualquier color que quieras */
   color: var(--aurora); /* color del texto, asegurate que contraste bien */
-  border: none; /* opcional: para sacarle borde gris */
+  border: 4px solid var(--aurora);
+  border-radius: 190px 190px 5px 5px;
+  background-color: white;
+  padding: 4rem; /* agrega espacio interior */
 }
 
 .card-aurora p,
 .card-aurora h2,
 .card-aurora li {
-  color: var(--aurora) !important;
+  color: var(--primary-color) !important;
 }
 /* Tipografía*/
 .h2-aurora {
@@ -275,13 +329,15 @@ section h2::after {
 .card-ocaso {
   background-color: var(--secondary-color); /* o cualquier color que quieras */
   color: var(--ocaso); /* color del texto, asegurate que contraste bien */
-  border: none; /* opcional: para sacarle borde gris */
+  border: 4px solid var(--ocaso);
+  border-radius: 190px 190px 5px 5px;
+  background-color: white;
 }
 
 .card-ocaso p,
 .card-ocaso h2,
 .card-ocaso li {
-  color: var(--ocaso) !important;
+  color: var(--primary-color) !important;
 }
 /* Tipografía*/
 .h2-ocaso {
@@ -297,6 +353,7 @@ section h2::after {
   color: var(--ocaso);
   line-height: 1;
 }
+
 
 /* 7. TESTIMONIOS */
 .blockquote {
@@ -370,112 +427,7 @@ section.bgRosita:last-of-type {
   padding-top: 0;
 }
 
-/* ============================== */
-/* CUSTOM HELPER CLASSES */
-/* ============================== */
-/*navbar*/
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 16px;
-  background-color: #fff3fc;
-  position: relative;
-}
-
-.navbar-brand {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.navbar-brand img {
-  height: 40px;
-}
-
-.navbar-nav {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: rgb(243, 241, 241);
-  padding: 1rem 0;
-  z-index: 10;
-}
-
-.navbar-nav.open {
-  display: block;
-}
-
-.navbar-nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 11;
-}
-
-.navbar-toggle span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: #0f093a;
-  margin: 5px 0;
-  transition: 0.3s;
-}
-
-.navbar-toggle.active span:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.navbar-toggle.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.navbar-toggle.active span:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-
-/* Desktop */
-@media (min-width: 768px) {
-  .navbar {
-    justify-content: center;
-  }
-
-  .navbar-brand {
-    position: static;
-    transform: none;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-
-  .navbar-nav {
-    display: block !important;
-    position: static;
-    background: none;
-    padding: 0;
-  }
-
-  .navbar-nav ul {
-    flex-direction: row;
-    gap: 2rem;
-  }
-}
 
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
@@ -526,7 +478,7 @@ section.bgRosita:last-of-type {
 .h5-detalle {
   font-size: 1.8rem;
   line-height: 1;
-  color: var(--ocaso);
+  color: var(--primary-color);
   font-family: "Namdhinggo", serif;
   font-weight: 800;
   font-style: normal;
@@ -544,6 +496,12 @@ section.bgRosita:last-of-type {
 /* PÁRRAFOS Y TEXTOS */
 .p-custom {
   font-size: 1.2rem;
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+
+.p-mes {
+  font-size: 2.1rem;
   color: var(--primary-color);
   line-height: 1.6;
 }

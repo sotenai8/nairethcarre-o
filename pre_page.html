@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Visible - Belluccia 3</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+
+
+
+
+
+<!-- /HERO -->
+
+<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas-->
+<section id="#turitualmensual" class="section-spacing container-fluid text-center bgMensuales">
+  <div class="container">
+    <h2 class="h5-custom mb-3">Bienvenidos a YaVino</h2>
+    <img src="img/rituales.png" alt="separador" class="mb-4">
+    <p class="p-light mx-auto mb-5" style="max-width: 720px;">
+      Este espacio reúne los caminos que trazamos. Aquí encontrarán los accesos a cada uno de los sitios desarrollados, según lo solicitado por la cátedra.
+    </p>
+
+    <div class="row gx-5">
+      <!-- ALBA -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 pt-5 h-100 card-alba">
+          <h2 class="h2-alba text-center">Index</h2>
+          <p class="p-alba">El portal al ritual</p>
+          <img src="img/Alba.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+           <a href="index.html" class="btn btn-dark mt-3">Acceder</a>
+        </div>
+      </div>
+
+      <!-- AURORA -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 pt-5 h-100 card-aurora">
+          <h2 class="h2-aurora text-center">Detalle</h2>
+          <p class="p-aurora">El desarrollo prometido</p>
+          <img src="img/Aurora.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
+                    <a href="detalle.html" class="btn btn-dark mt-3">Acceder</a>
+        </div>
+      </div>
+
+      <!-- OCASO -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 pt-5 h-100 card-ocaso">
+          <h2 class="h2-ocaso text-center">Plantilla</h2>
+          <p class="p-ocaso">El inicio de Todo</p>
+          <img src="img/Ocaso.png" class="img-fluid img-rounded my-3" alt="Plan Full">
+          <a href="index_plantilla.html" class="btn btn-dark mt-2 ">Acceder</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- /FOOTER -->
+
+<!-- FOOTER: Pie de página -->
+<footer class="text-center py-4">
+  <div class="container">
+    <p style="color: var(--secondary-color)">© 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.</p>
+    <p style="color: var(--secondary-color)">Carreño Naireth - Comisión 1 - Agus_Diego</p>
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+</body>
+</html>
